@@ -12,8 +12,14 @@ namespace HelloWorld
             Console.WriteLine("Enter your first name: ");
             string firstName = Console.ReadLine();
 
-            Console.WriteLine("Hello" + firstName + "!");
+            //Console.WriteLine("Hello" + firstName + "!");
 
+            //strint interpolation
+            Console.WriteLine($"Hello, {firstName}!");
+
+            Console.WriteLine("Enter your last name: ");
+            string lastName = Console.ReadLine();
+            Console.WriteLine($"Hello, {firstName} {lastName}!");
 
             Console.Read();
         }
